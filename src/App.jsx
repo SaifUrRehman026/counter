@@ -5,8 +5,11 @@ function App() {
   let [count, setcount]=useState(15);
 const addValue=()=>{
   if(count < 20){
-     let counter =count + 1;
-setcount(counter);
+    
+setcount((prevcount)=>prevcount + 1);
+setcount((prevcount)=>prevcount + 1);
+setcount((prevcount)=>prevcount + 1);
+setcount((prevcount)=>prevcount + 1);
   }else{
     alert("You Reached the limit ")
   }
